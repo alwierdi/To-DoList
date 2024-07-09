@@ -10,7 +10,7 @@ function addTask() {
     listContainer.insertBefore(li, listContainer.firstChild);
     // listContainer.appendChild(li);
     let span = document.createElement("span");
-    span.innerHTML = "\u00d7";
+    span.innerHTML = "\u00d7"; //sintaks untuk menyisipkan simbol "x"
     li.appendChild(span);
   }
   inputBox.value = "";
@@ -44,4 +44,4 @@ function saveData() {
 function showTask() {
   listContainer.innerHTML = localStorage.getItem("data");
 }
-showTask()
+showTask();
